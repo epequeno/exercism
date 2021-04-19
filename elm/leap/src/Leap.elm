@@ -13,5 +13,5 @@ isLeapYear year =
         False
 
 
-isDivisibleBy n divisor =
-    modBy n divisor == 0
+isDivisibleBy divisor n =
+    modBy divisor n == 0
