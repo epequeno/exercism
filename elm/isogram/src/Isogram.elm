@@ -3,19 +3,13 @@ module Isogram exposing (isIsogram)
 
 isIsogram : String -> Bool
 isIsogram sentence =
-    case sentence of
-        "" ->
-            True
-
-        _ ->
-            sentence
-                |> String.replace "-" ""
-                |> String.replace " " ""
-                |> String.toLower
-                |> String.toList
-                |> List.sort
-                |> anyRepeated
-                |> not
+    sentence
+        |> String.filter Char.isAlpha
+        |> String.toLower
+        |> String.toList
+        |> List.sort
+        |> anyRepeated
+        |> not
 
 
 anyRepeated : List Char -> Bool
