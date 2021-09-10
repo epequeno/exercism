@@ -1,5 +1,10 @@
 # Diffie Hellman
 
+Welcome to Diffie Hellman on Exercism's Rust Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Instructions
+
 Diffie-Hellman key exchange.
 
 Alice and Bob use Diffie-Hellman key exchange to share secrets.  They
@@ -40,63 +45,39 @@ secret s.
 One possible solution for this exercise is to implement your own modular exponentiation function.
 To learn more about it refer to the [following page](https://en.wikipedia.org/wiki/Modular_exponentiation).
 
+## For bonus points
 
-## Rust Installation
+Many implementations do not work for the entire domain of inputs.
+There are additional optional tests defined which help ensure that all valid inputs produce valid results.
 
-Refer to the [exercism help page][help-page] for Rust installation and learning
-resources.
-
-## Writing the Code
-
-Execute the tests with:
+To run the bonus tests, remove the `#[ignore]` flag and execute the tests with
+the `big-primes` feature, like this:
 
 ```bash
-$ cargo test
+$ cargo test --features big-primes
 ```
-
-All but the first test have been ignored. After you get the first test to
-pass, open the tests source file which is located in the `tests` directory
-and remove the `#[ignore]` flag from the next test and get the tests to pass
-again. Each separate test is a function with `#[test]` flag above it.
-Continue, until you pass every test.
-
-If you wish to run all tests without editing the tests source file, use:
-
-```bash
-$ cargo test -- --ignored
-```
-
-To run a specific test, for example `some_test`, you can use:
-
-```bash
-$ cargo test some_test
-```
-
-If the specific test is ignored use:
-
-```bash
-$ cargo test some_test -- --ignored
-```
-
-To learn more about Rust tests refer to the [online test documentation][rust-tests]
-
-Make sure to read the [Modules](https://doc.rust-lang.org/book/ch07-02-modules-and-use-to-control-scope-and-privacy.html) chapter if you
-haven't already, it will help you with organizing your files.
-
-## Feedback, Issues, Pull Requests
-
-The [exercism/rust](https://github.com/exercism/rust) repository on GitHub is the home for all of the Rust exercises. If you have feedback about an exercise, or want to help implement new exercises, head over there and create an issue. Members of the rust track team are happy to help!
-
-If you want to know more about Exercism, take a look at the [contribution guide](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/README.md).
-
-[help-page]: https://exercism.io/tracks/rust/learning
-[modules]: https://doc.rust-lang.org/book/ch07-02-modules-and-use-to-control-scope-and-privacy.html
-[cargo]: https://doc.rust-lang.org/book/ch14-00-more-about-cargo.html
-[rust-tests]: https://doc.rust-lang.org/book/ch11-02-running-tests.html
 
 ## Source
 
-Wikipedia, 1024 bit key from www.cryptopp.com/wiki. [http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange](http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
+### Created by
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+- @hekrause
+
+### Contributed to by
+
+- @Baelyk
+- @coriolinus
+- @cwhakes
+- @efx
+- @ErikSchierboom
+- @LeBlue
+- @lutostag
+- @petertseng
+- @rofrol
+- @stringparser
+- @xakon
+- @ZapAnton
+
+### Based on
+
+Wikipedia, 1024 bit key from www.cryptopp.com/wiki. - http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
